@@ -1,6 +1,9 @@
 package javaProgramHW;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class programHomework {
 
@@ -16,15 +19,31 @@ public class programHomework {
 	
 	
 //		 Write a Java program to extract a portion of an array list
-	ArrayList<String> extract = new ArrayList<> ();
-	extract.add("Orange, Apples, Pears, Grapes, Mango");
-	extract.subList(0, 1);
-	System.out.println(extract);
+	ArrayList<String> fruits = new ArrayList<> ();
+	fruits.addAll(Arrays.asList("Orange", "Apples", "Pears"));
+	System.out.println(fruits);
+
+	List<String> extract = fruits.subList(0, 1);
+	System.out.println("This is the original array: " + fruits );
+	System.out.println("This is the extracted array: " + extract);
+	
+	extract.add("Cucumber");
+	System.out.println("This is the extracted array plus the added item: " + extract);
+	System.out.println("This is the original array plus the added item: " + fruits);
 	
 	
 	
 //		Write a Java program of swap two elements in an array list
-	//
+    ArrayList<String> animals = new ArrayList<>();
+    animals.addAll(Arrays.asList("cats", "dogs", "hamsters", "giraffes", "birds", "sharks"));
+    System.out.println("Original: " + animals);
+    
+    Collections.swap(animals, 1, 5);
+    System.out.println("Swapped: " + animals);
+	
+	
+	
+	
 //		Write a Java program to test an array list is empty or not
 	//
 //		Write a Java program to replace the second element of an ArrayList with the specified element.
