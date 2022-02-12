@@ -57,7 +57,8 @@ public class programHomework {
 		System.out.println("Trimmed array: ");
 		colors.trimToSize();
 		System.out.println(colors);
-		
+
+//		Hungry For More:
 		
 //		Write a Java program to test a hash set is empty or not.
 		HashSet<String> h_set = new HashSet();
@@ -74,7 +75,9 @@ public class programHomework {
 		h_set.removeAll(h_set);
 		System.out.println("Hash Set after removing all the elements "+h_set);
 //		Write a Java program to get the number of elements in a hash set
-		//
+		System.out.println("Original Hash Set: " + h_set);
+		System.out.println("Size of the Hash Set: " + h_set.size());
+
 //		Write a Java program to iterate through all elements in a hash list.
 		//
 //		Write a Java program to convert a hash set (key-value pair) to an array.
