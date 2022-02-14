@@ -79,7 +79,9 @@ public class programHomework {
 		System.out.println("Size of the Hash Set: " + h_set.size());
 
 //		Write a Java program to iterate through all elements in a hash list.
-		//
+		Iterator<String> p = h_set.iterator();
+		while (p.hasNext()) {
+			System.out.println(p.next());
 //		Write a Java program to convert a hash set (key-value pair) to an array.
 		//
 //		Write a Java program to compare two sets and retain elements that are the same on both sets.
