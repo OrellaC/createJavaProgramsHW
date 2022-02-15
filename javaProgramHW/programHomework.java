@@ -83,7 +83,15 @@ public class programHomework {
 		while (p.hasNext()) {
 			System.out.println(p.next());
 //		Write a Java program to convert a hash set (key-value pair) to an array.
-		//
+			System.out.println("Original Hash Set: " + h_set);
+		
+			String[] new_array = new String[h_set.size()];
+			h_set.toArray(new_array);
+
+
+			System.out.println("Array elements: ");
+			for(String element : new_array){
+				System.out.println(element);
 //		Write a Java program to compare two sets and retain elements that are the same on both sets.
 
 	}
